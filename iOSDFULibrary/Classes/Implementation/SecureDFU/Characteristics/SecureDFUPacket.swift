@@ -61,10 +61,6 @@ internal class SecureDFUPacket: DFUCharacteristic {
             // Level changes to iOS DFU framework: Make the packet size the first word-aligned value that's less than the maximum
             packetSize = UInt32(characteristic.service.peripheral.maximumWriteValueLength(for: .withoutResponse)) & 0xFFFC
             
-            /* Original iOS DFU framework:
-            packetSize = UInt32(characteristic.service.peripheral.maximumWriteValueLength(for: .withoutResponse))
-            */
-            
             if packetSize > 20 {
                 // MTU is 3 bytes larger than payload
                 // (1 octet for Op-Code and 2 octets for Att Handle).
