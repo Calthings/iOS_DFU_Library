@@ -86,23 +86,6 @@ extension BaseDFUExecutor {
             $0.dfuError(DFUError.deviceDisconnected, didOccurWithMessage: "Device disconnected during DFU transfer!")
         }
         
-        /* Original iOS DFU framework: Do not attempt reconnection since the device will have exited the DFU state
-         
-        // If the disconnection happened for no reason, we can retry to connect to the
-        // same peripheral and continue uploading.
-        guard let error = error else {
-            delegate {
-                $0.dfuStateDidChange(to: .connecting)
-            }
-            peripheral.reconnect()
-            return
-        }
-        // Check if there was an error that needs to be reported now.
-        delegate {
-            $0.dfuError(error.error, didOccurWithMessage: error.message)
-        }
-         */
-        
         // Release the cyclic reference.
         peripheral.destroy()
     }
