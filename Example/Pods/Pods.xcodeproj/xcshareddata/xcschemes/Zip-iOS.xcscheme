@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5D94E351BD6926C6DC33FBD834E16AC"
-               BuildableName = "iOSDFULibrary.framework"
-               BlueprintName = "iOSDFULibrary-iOS"
+               BlueprintIdentifier = "F57306538B475B533545EE22C423E8EB"
+               BuildableName = "Zip.framework"
+               BlueprintName = "Zip-iOS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5D94E351BD6926C6DC33FBD834E16AC"
-            BuildableName = "iOSDFULibrary.framework"
-            BlueprintName = "iOSDFULibrary-iOS"
+            BlueprintIdentifier = "F57306538B475B533545EE22C423E8EB"
+            BuildableName = "Zip.framework"
+            BlueprintName = "Zip-iOS"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
